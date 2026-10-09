@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veterans Home Proof — Pest, Rodent & Home Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--c1:#1f7a4d;--c2:#14532d;--ink:#1e293b;--muted:#64748b;--bg:#f8fafc;--card:#ffffff;--line:#e2e8f0}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Plus Jakarta Sans',system-ui,-apple-system,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{font-weight:800;font-size:1.15rem;color:var(--c2);text-decoration:none}
+.navcta{background:var(--c1);color:#fff;font-weight:700;padding:10px 22px;border-radius:999px;text-decoration:none;font-size:.95rem}
+.navcta:hover{background:var(--c2)}
+.hero{background:linear-gradient(135deg,var(--c1),var(--c2));color:#fff;padding:88px 0 80px}
+.hero h1{font-size:clamp(2rem,4.5vw,3.1rem);font-weight:800;line-height:1.15;margin-bottom:16px;letter-spacing:-.5px}
+.hero p{font-size:1.12rem;max-width:640px;opacity:.93;margin-bottom:32px}
+.btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;font-weight:700;padding:14px 30px;border-radius:999px;text-decoration:none;font-size:1rem}
+.btn-light{background:#fff;color:var(--c2)}
+.btn-outline{border:2px solid rgba(255,255,255,.8);color:#fff}
+.strip{background:var(--c2);color:#fff}
+.strip .wrap{display:flex;flex-wrap:wrap;gap:8px 32px;justify-content:center;padding:16px 24px;font-weight:600;font-size:.95rem}
+.strip span::before{content:"✓ ";color:#a7f3d0}
+section{padding:72px 0}
+.sec-head{text-align:center;max-width:640px;margin:0 auto 44px}
+.sec-head h2{font-size:1.9rem;font-weight:800;color:var(--c2);margin-bottom:12px;letter-spacing:-.4px}
+.sec-head p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px;transition:transform .15s ease,box-shadow .15s ease}
+.card:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(15,40,70,.08)}
+.card .ico{width:46px;height:46px;border-radius:12px;background:linear-gradient(135deg,var(--c1),var(--c2));display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.card .ico svg{width:24px;height:24px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.card h3{font-size:1.08rem;font-weight:700;margin-bottom:8px}
+.card p{color:var(--muted);font-size:.94rem}
+.about{background:var(--bg)}
+.about .wrap{max-width:760px}
+.about h2{font-size:1.9rem;font-weight:800;color:var(--c2);margin-bottom:16px}
+.about p{color:#475569;margin-bottom:14px}
+.proof .tgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.tcard{background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:26px}
+.tcard .stars{color:#eab308;font-size:1.05rem;margin-bottom:10px;letter-spacing:2px}
+.tcard p{font-style:italic;color:#334155;margin-bottom:12px;font-size:.96rem}
+.tcard .who{font-weight:700;font-size:.9rem;color:var(--c2)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.step{text-align:center;padding:28px 20px;border:1px solid var(--line);border-radius:16px;background:var(--card)}
+.step .num{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--c1),var(--c2));color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-size:1.2rem}
+.step h3{font-weight:700;margin-bottom:8px}
+.step p{color:var(--muted);font-size:.94rem}
+.contact{background:linear-gradient(135deg,var(--c1),var(--c2));color:#fff;text-align:center}
+.contact h2{font-size:2rem;font-weight:800;margin-bottom:12px}
+.contact p{opacity:.92;max-width:560px;margin:0 auto 30px}
+.contact .meta{margin-top:26px;opacity:.85;font-size:.95rem}
+footer{background:#0f172a;color:#94a3b8;text-align:center;padding:26px 16px;font-size:.88rem}
+@media(max-width:760px){.grid,.steps,.proof .tgrid{grid-template-columns:1fr}section{padding:52px 0}.hero{padding:60px 0 56px}.brand{font-size:1rem}.navcta{padding:8px 16px;font-size:.85rem}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a class="brand" href="#top">Veterans Home Proof</a><a class="navcta" href="tel:17707960220">Call (770) 796-0220</a></div></nav>
+<header class="hero" id="top"><div class="wrap">
+<h1>Pest, Rodent & Home Services</h1>
+<p>Extermination, rodent and wildlife control, gutter services, and attic work — professional quality at fair prices, 35% less than competitors.</p>
+<div class="btns"><a class="btn btn-light" href="tel:17707960220">Call (770) 796-0220</a><a class="btn btn-outline" href="mailto:vetshomeproof@gmail.com">Email Us</a></div>
+</div></header>
+<div class="strip"><div class="wrap"><span>Est. 2014</span><span>35% Less Than Competitors</span><span>24-Hour Emergency Service</span><span>Satisfaction Priority</span></div></div>
+<section><div class="wrap">
+<div class="sec-head"><h2>Our Services</h2><p>Professional pest control & home services in Acworth, GA & surrounding areas.</p></div>
+<div class="grid"><div class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2v20M4 6l16 12M20 6L4 18"/></svg></div><h3>Rodent Control</h3><p>Rats, mice, squirrels, and chipmunks — trapped and excluded.</p></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3c-4 4-6 7-6 10a6 6 0 0 0 12 0c0-3-2-6-6-10z"/></svg></div><h3>Wildlife Control</h3><p>Raccoons, possums, bats, and armadillos handled humanely.</p></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><h3>Pest Control Plans</h3><p>Monthly, bi-monthly, or quarterly protection.</p></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 12h18M12 3v18"/></svg></div><h3>Gutter Cleaning & Guards</h3><p>Cleaning, repairs, and leaf guard installation.</p></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></div><h3>Attic Insulation</h3><p>Insulation removal, blow-in installs, and deodorizing.</p></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/></svg></div><h3>Mold & Moisture</h3><p>Mold removal, moisture barriers, and French drainage.</p></div></div>
+</div></section>
+<section class="about"><div class="wrap"><h2>About Veterans Home Proof</h2><p>Established in 2014, Veterans Home Proof protects homeowners and their properties with extermination, maintenance, cleaning, and structural enhancements. Their mission: professional, quality service at fair and affordable prices — charging 35% less than competitors while getting the job done right the first time.</p><p style="color:var(--muted);font-size:.95rem"><strong>Service area:</strong> Acworth, GA & surrounding areas</p></div></section>
+<section class="proof"><div class="wrap">
+<div class="sec-head"><h2>What Our Customers Say</h2><p>Real reviews from our customers.</p></div>
+<div class="tgrid"><div class="tcard"><div class="stars">★★★★★</div><p>“This was the best company I have ever used. They have NEVER looked this good. Will went above and beyond… He's fairly priced, gives great service and considering how much extra he does, it's a huge value.”</p><div class="who">Frances S., Acworth, GA</div></div><div class="tcard"><div class="stars">★★★★★</div><p>“I was beyond upset about my problem at home, and Veterans Home Proof was patient, detailed and professional every step of the way… I will recommend this company to Everyone. 7 stars in my opinion”</p><div class="who">Jha R.</div></div></div>
+</div></section>
+<section class="contact"><div class="wrap">
+<h2>Get in Touch Today</h2>
+<p>Call or email us now — we're ready to help with your pest control & home service needs.</p>
+<div class="btns" style="justify-content:center"><a class="btn btn-light" href="tel:17707960220">Call (770) 796-0220</a><a class="btn btn-outline" href="mailto:vetshomeproof@gmail.com">vetshomeproof@gmail.com</a></div>
+<div class="meta">Acworth, GA area · 24-hour pest & rodent emergency service</div>
+</div></section>
+<footer>© 2026 Veterans Home Proof. All rights reserved.</footer>
+</body>
+</html>
